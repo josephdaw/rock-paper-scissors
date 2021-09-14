@@ -1,11 +1,16 @@
 /* set root variables */
 :root {
-  --primary: #3c4369;
+  --primary: #191919;
   --secondary: #98878f;
   --light: aliceblue;
   --dark: #192231;
-  --accent: #985e6d;
+  --accent: #c20000;
   --bg-main: rgba(219, 214, 214, 0.1);
+}
+
+@font-face {
+  font-family: "Mercy";
+  src: url("assets/font/no-mercy.ttf");
 }
 
 /* element selectors */
@@ -16,6 +21,8 @@ body {
 /* set default text sizing */
 h1 {
   font-size: 3rem;
+  font-family: 'Mercy';
+  line-height: 2em;
 }
 
 h2 {
@@ -44,10 +51,10 @@ a {
 }
 
 h1, h2 { 
-  padding: 10px;
+  padding: 20px;
   text-align: center;
-  background-color: var(--secondary);
-  color: var(--dark);
+  background-color: var(--primary);
+  color: var(--accent);
   clear: both;
 }
 
@@ -69,8 +76,8 @@ header{
 header h1 {
   text-align: center;
   padding-bottom: 15px;
-  background-color: var(--primary);
-  color: var(--secondary);
+  /* background-color: var(--primary);
+  color: var(--secondary); */
 }
 
 nav {
@@ -84,14 +91,13 @@ nav a, footer a {
 }
 
 main {
-  /* min-height: 80vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 footer {
-  background-color: var(--dark);
+  background-color: var(--primary);
   padding: 10px 0;
   min-height: 8vh;
 }
