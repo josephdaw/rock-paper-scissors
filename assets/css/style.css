@@ -34,7 +34,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  /* font-family: 'No Mercy'; */
 }
 
 h3 {
@@ -52,6 +51,7 @@ h5 {
 p {
   line-height: 1.3rem;
   padding: 5px 10px;
+  color: var(--secondary);
 }
 
 a {
@@ -102,6 +102,10 @@ main {
 main img {
   max-height: 50vh;
   max-width: 95%;
+}
+
+main img:hover {
+  cursor: grab;
 }
 
 footer {
