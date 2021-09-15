@@ -1,47 +1,22 @@
-# Unit 03 Mini-Project: Rock, Paper, Scissors
+# Rock, Paper, Scissors
 
-In this activity, you will work with a group to build a game using only JavaScript.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Instructions
+## Description
+This website is a responsive HTML website using semantic tags, CSS, and JavaScript. I designed the site using a "mobile first" philosophy and have tried to make it fit without scrolling on as many screen sizes as possible.
 
-The completed application should meet the following criteria:
+You can [view this site](https://josephdaw.github.io/) on Github Pages at https://josephdaw.github.io/.
 
-* As a user, I want to play Rock, Paper, Scissors against an automated opponent.
+![site preview](assets/img/rock-paper-scissors.png)
 
-* As a user, I can enter R, P, or S to signify my choice of rock, paper, or scissors.
+## Lessons
+As this site doesn't have much to it, I wanted it to display without scrolling as much as possible. This created the issue of how to make sure that the page was filled on larger screens. I used a [flexbox solution](https://stackoverflow.com/questions/16679146/force-footer-on-bottom-on-pages-with-little-content) to get the content to fill to the bottom of the page.
 
-* As a user, I expect the computer to choose R, P, or S in return.
+In this design I have also incorporated a custom font called ["No Mercy"](https://www.fontspace.com/no-mercy-font-f62831). This is the first time I have attempted to use a custom font. As I am used to linking a stylesheet to the index.html file, I used the same relative link thinking that browsers always start at the root and follow the link. It took me a little while (longer than I care to admit) to work out that I needed to have the link relative to the CSS file. Once I fixed that the font worked perfectly. I am very happy with the choice of font, I think it fits nicely with the theme I was trying for.
 
-* As a user, I want the option to play again whether I win or lose.
+## Credits
+- Heading Font ["No Mercy"](https://www.fontspace.com/no-mercy-font-f62831) by Jonathan S Harris.
+- 'Saw Face' design by [The Shirt List](https://www.theshirtlist.com/lets-play-a-game-t-shirt-2/)
 
-* As a user, I want to see my total wins, ties, and losses after each round.
-
-### Specifications
-
-* Must use the `alert()`, `confirm()`, and `prompt()` methods to collect user input and display information to the user.
-
-* The computer's selection must be random to ensure a fair game.
-
-## 💡 Notes
-
-Refer to the documentation:
-
-* [MDN Web Docs on window.alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
-
-* [MDN Web Docs on window.confirm()](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm)
-
-* [MDN Web Docs on window.prompt()](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
-
-* [MDN Web Docs on Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your group to further your knowledge:
-
-* How can you customize the appearance of the `alert()`, `confirm()`, and `prompt()` dialog boxes?
-
-Use [Google](https://www.google.com) or another search engine to research this.
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## License
+This project is released under the [MIT License](LICENSE).
