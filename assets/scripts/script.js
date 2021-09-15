@@ -4,9 +4,10 @@ var playerHand;
 var computerHand;
 
 // declare variables for possible outcomes
-var win;
-var loss;
-var draw;
+var result;
+// var win;
+// var loss;
+// var draw;
 
 //declare variables for keeping track of outcomes
 var winCount;
@@ -18,7 +19,7 @@ function playGame() {
     if (window.confirm("Let's play a game...")) {
 
         // give prompt for player to select R, P, or S.
-        window.prompt("Please select R, P, or S");
+        playerHand = window.prompt("Please select R, P, or S");
 
         // check that a selection has been made
         // TO DO
@@ -27,7 +28,11 @@ function playGame() {
         computerSelection();
 
         //check who won
-        whoWon();
+        result = whoWon();
+
+        // display result to user
+
+        displayResult(result);
 
     };
 }; // END - playGame
@@ -49,17 +54,17 @@ function computerSelection () {
 
     // if randomInt = 0 then = Rock
     if (x == 0) {
-        window.confirm("Computer selected Rock");
+        window.alert("Computer selected Rock");
         return computerHand = "R";
 
     // if randomInt = 1 then = Paper
     } else if (x == 1) {
-        window.confirm("Computer selected Paper");
+        window.alert("Computer selected Paper");
         return computerHand = "P";
 
     // else = Scissors
     } else {
-        window.confirm("Computer selected Scissors");
+        window.alert("Computer selected Scissors");
         return computerHand = "S";
     }
 }; // END -- computerSelection
@@ -74,34 +79,41 @@ function whoWon () {
 
     // both the same = draw
     if (playerHand == computerHand) {
-       console.log("draw");
-        return draw;
+        console.log("draw");
+        return result = "draw";
 
     // R beats S
     } else if (playerHand == "R" && computerHand == "S") {
-       console.log("win1");
-        return win;
+        console.log("win1");
+        return result = "win";
 
     // S beats P
     } else if (playerHand == "S" && computerHand == "P") {
        console.log("win2");
-        return win;
+       return result = "win";
 
     // P beats R 
     } else if (playerHand == "P" && computerHand == "R") {
        console.log("win3");
-        return win;   
+       return result = "win";
 
     // otherwise player looses
     } else {
-        console.log("lost");
-        return loss;
+        console.log("loss");
+        return result = "loss";
     };
     
 }; // END -- whoWon
 
 
 // display result to the player
-// function displayResult {
-//     //var result = 
-// }
+function displayResult (result) {
+
+    if (result == "draw") {
+        window.alert("It was a draw");
+    } else if (result == "win") {
+        window.alert("You won!");
+    } else {
+        window.alert("The computer won, better luck next time.");
+    }
+}
