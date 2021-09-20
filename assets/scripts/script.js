@@ -6,7 +6,6 @@ var computerHand;
 // declare variables for possible outcomes
 var result;
 
-
 //declare variables for keeping track of outcomes
 var winCount = 0;
 var lossCount = 0;
@@ -20,7 +19,7 @@ function playGame() {
         playerHand = window.prompt("Please select R, P, or S").toUpperCase();
 
         // check that a selection has been made
-        // TO DO
+        // TO DO...
 
         // get computer to select a hand
         computerSelection();
@@ -38,6 +37,12 @@ function playGame() {
 }; // END - playGame
 
 
+// check for a player selection
+do  {
+    playerHand = window.prompt("You did not make a valid selection. Please select R, P, or S");
+    console.log(playerHand);
+    //return playerHand;
+} while ((playerHand !== "R") || (playerHand !== "P") || (playerHand !== "S"));
 
 // generate at random
 function randomInt(max) {
@@ -76,7 +81,6 @@ function whoWon () {
 
     // both the same = draw
     if (playerHand == computerHand) {
-        console.log("draw");
         drawCount ++;
         return result = "draw";
 
