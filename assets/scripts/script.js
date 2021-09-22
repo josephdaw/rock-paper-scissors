@@ -19,7 +19,12 @@ function playGame() {
         playerHand = window.prompt("Please select R, P, or S").toUpperCase();
 
         // check that a selection has been made
-        // TO DO...
+        // check for a player selection
+        // do {
+        //     playerHand = window.prompt("You did not make a valid selection. Please select R, P, or S");
+        //     console.log(playerHand);
+        //     //return playerHand;
+        // } while ((playerHand !== "R") || (playerHand !== "P") || (playerHand !== "S"));
 
         // get computer to select a hand
         computerSelection();
@@ -37,12 +42,7 @@ function playGame() {
 }; // END - playGame
 
 
-// check for a player selection
-do  {
-    playerHand = window.prompt("You did not make a valid selection. Please select R, P, or S");
-    console.log(playerHand);
-    //return playerHand;
-} while ((playerHand !== "R") || (playerHand !== "P") || (playerHand !== "S"));
+
 
 // generate at random
 function randomInt(max) {
