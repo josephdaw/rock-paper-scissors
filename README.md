@@ -9,9 +9,14 @@
 ## Description
 This website is a responsive HTML website using semantic tags, CSS, and JavaScript. I designed the site using a "mobile first" philosophy and have tried to make it fit without scrolling on as many screen sizes as possible.
 
+When the user clicks on the face, they are given a series of prompts in order to play the game. Once the game has finished the score count is displayed and the user has the option to play again.
+
 You can [view this site](https://josephdaw.github.io/rock-paper-scissors) on Github Pages at https://josephdaw.github.io/rock-paper-scissors.
 
 ![site preview](assets/img/rock-paper-scissors.png)
+![player hand selection](assets/img/rock-paper-scissors-player-hand.png)
+![computer hand selection](assets/img/rock-paper-scissors-computer-hand.png)
+![score tally display](assets/img/rock-paper-scissors-result-tally.png)
 
 ## Lessons
 As this site doesn't have much to it, I wanted it to display without scrolling as much as possible. This created the issue of how to make sure that the page was filled on larger screens. I used a [flexbox solution](https://stackoverflow.com/questions/16679146/force-footer-on-bottom-on-pages-with-little-content) to get the content to fill to the bottom of the page.
