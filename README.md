@@ -9,7 +9,7 @@
 ## Description
 This website is a responsive HTML website using semantic tags, CSS, and JavaScript. I designed the site using a "mobile first" philosophy and have tried to make it fit without scrolling on as many screen sizes as possible.
 
-You can [view this site](https://josephdaw.github.io/) on Github Pages at https://josephdaw.github.io/.
+You can [view this site](https://josephdaw.github.io/rock-paper-scissors) on Github Pages at https://josephdaw.github.io/rock-paper-scissors.
 
 ![site preview](assets/img/rock-paper-scissors.png)
 
